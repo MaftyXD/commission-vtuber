@@ -598,7 +598,10 @@
       padding: 0;
     }
     .samples--banner { grid-template-columns: minmax(0, 1fr); }
-    .samples--row4   { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+    /* TikTok Overlay: 1 baris 4 kolom, tile lonjong ke bawah */
+    .samples--row4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .samples--row4 .tile--video { aspect-ratio: 9 / 16; }
 
     @media (min-width: 640px) {
       .samples--triple { grid-template-columns: repeat(3, minmax(0, 1fr)); }
