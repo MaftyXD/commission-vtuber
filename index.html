@@ -598,6 +598,7 @@
       padding: 0;
     }
     .samples--banner { grid-template-columns: minmax(0, 1fr); }
+    .samples--row4   { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 
     @media (min-width: 640px) {
       .samples--triple { grid-template-columns: repeat(3, minmax(0, 1fr)); }
@@ -1127,7 +1128,7 @@
           </dl>
           <div>
             <p class="eyebrow samples-label">Galeri Sampel</p>
-            <ul class="samples" role="list">
+            <ul class="samples samples--row4" role="list">
               <li class="tile tile--video"><img src="assets/Tiktok_Overlay/1.png" alt="Sampel TikTok overlay 1" loading="lazy" /></li>
               <li class="tile tile--video"><svg class="tile__icon" aria-hidden="true"><use href="#i-image" /></svg><span>Sampel 2</span></li>
               <li class="tile tile--video"><svg class="tile__icon" aria-hidden="true"><use href="#i-image" /></svg><span>Sampel 3</span></li>
